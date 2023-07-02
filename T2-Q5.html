@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+    <style>
+        .container{
+            /* border:1px solid #041515; */
+            height: 80vh;
+            width:60vw;
+            display: grid;
+            gap:10px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(7, 1fr);
+            /* grid-auto-rows: minmax(100px, auto); */
+         
+        }
+        .box{
+            background-color: #041515;
+            color:white;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        .one{
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+        }
+        .two{
+            grid-column: 2 / 3;
+            grid-row: 1/ 4;
+        }
+        .three{
+            grid-column: 1 / 3;
+            grid-row: 4 / 7
+        }
+        .four{
+            grid-column: 3 / 4;
+            grid-row: 1 / 3
+        }
+        .five{
+            grid-column: 3 / 4;
+            grid-row: 3 / 5
+        }
+        .six{
+            grid-column: 3 / 4;
+            grid-row: 5 / 7
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one box">One</div>
+        <div class="two box">Two</div>
+        <div class="three box">Three</div>
+        <div class="four box">four</div>
+        <div class="five box">five</div>
+        <div class="six box">six</div>
+    </div>
+    
+</body>
+</html>
