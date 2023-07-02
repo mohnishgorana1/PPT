@@ -1,0 +1,116 @@
+<!-- 2. Create a form with basic validation (name, email, phone number, password, age, gender, date, color picker) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      body {
+        background-color: #121212;
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      p {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+      }
+      input {
+        font-size: 16px;
+      }
+      #submit {
+        width: 80px;
+        align-self: center;
+        margin-top: 20px;
+        color: black;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 8px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <br />
+    <form action="">
+      <p>
+        NAME
+        <label for="Name">
+          <input type="text" name="name" id="name" placeholder="Name" />
+        </label>
+      </p>
+
+      <p>
+        EMAIL<label for="email"
+          ><input type="email" name="email" id="email" placeholder="Email"
+        /></label>
+      </p>
+
+      <p>
+        PHONE NUMBER<label for="phone number"
+          ><input
+            type="tel"
+            name="phone number"
+            minlength="10"
+            maxlength="10"
+            id="phone"
+            placeholder="Phone Number"
+            required
+        /></label>
+      </p>
+
+      <p>
+        PASSWORD<label for="password"
+          ><input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+        /></label>
+      </p>
+
+      <p>
+        AGE<label for="age"
+          ><input type="text" name="age" id="age" placeholder="Age"
+        /></label>
+      </p>
+
+      <p>
+        GENDER<label for="gender">
+          <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+      </p>
+
+      <p>
+        DATE<label for="date"
+          ><input type="date" name="date" id="date" placeholder="Date"
+        /></label>
+      </p>
+
+      <p>
+        COLOR PICKER<label for="Color Picker"
+          ><input type="color" name="color" id="color" placeholder="color"
+        /></label>
+      </p>
+
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
